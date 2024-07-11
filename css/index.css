@@ -359,6 +359,8 @@ footer {
 
 
 /* responsiveness  */
+
+
 @media screen and (max-width: 1500px) {
   .collection_sections h1,
   .selling_items h1 {
@@ -375,7 +377,7 @@ footer {
 
 @media screen and (max-width: 900px) {
   .collection_sections h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
