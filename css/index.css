@@ -356,18 +356,13 @@ footer {
   cursor: pointer;
 }
 
-
-
 /* responsiveness  */
-
 
 @media screen and (max-width: 1500px) {
   .collection_sections h1,
   .selling_items h1 {
     font-size: 3rem;
   }
-  
-  
 
   .navbar,
   footer {
@@ -376,33 +371,24 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  .collection_sections h1{
-    font-size: 1.5rem;
+  .collection_sections h1 {
+    font-size: 1rem;
   }
 }
-
 
 @media screen and (max-width: 900px) {
-  .navbar li{
+  .navbar li {
     gap: 14px;
-  font-size: 20px;
-
+    font-size: 20px;
   }
 }
-
-
 
 @media screen and (max-width: 700px) {
-  .navbar li{
+  .navbar li {
     gap: 14px;
-  font-size: 16px;
-
+    font-size: 16px;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 667px) {
   .nav_items,
