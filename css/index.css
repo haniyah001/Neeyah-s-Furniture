@@ -421,6 +421,11 @@ footer {
     width: 200px;
     align-self: center;
   }
+
+  .collection_sections h1,
+  .selling_items h1 {
+    font-size: 1rem;
+  }
 }
 
 .hidden {
