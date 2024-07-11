@@ -1,0 +1,290 @@
+#container {
+  max-width: 100rem;
+  width: 100%;
+}
+
+.Wood_furniture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 2rem 0;
+
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.Wood_furniture--wrapper {
+  width: 80vw;
+  height: 100%;
+
+  background-image: url("../images/Rectangle\ 1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  position: relative;
+}
+
+.Wood_furniture .Wood_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* This align the content appropriately */
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.Wood_content h1 {
+  font-size: 40px;
+  font-weight: 900;
+  cursor: default;
+}
+
+.Wood_content p {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(181, 175, 175);
+  cursor: default;
+}
+
+.wood_btn {
+  width: 135px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #fff;
+  align-self: center;
+}
+
+/* <!-- ----COLLECTION STYLING --> */
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection_sections,
+.selling_items {
+  padding: 4rem 0;
+}
+
+.slider {
+  padding: 1.5rem 2.5rem;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+}
+
+.slider_image {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider_image h1 {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  cursor: default;
+  text-align: center;
+}
+
+.slider .slider_1 {
+  position: relative;
+}
+
+.slider_btn {
+  position: absolute;
+  font-size: 13px;
+  background-color: #eca52f;
+  padding: 7px 10px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.slider_btn--right {
+  right: 15px;
+}
+
+.slider_btn--left {
+  left: 15px;
+}
+
+/* <!-- TRANSFORM YOUR HOME STYLING --> */
+
+.Transform {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../images/Rectangle\ 4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Transform_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.Transform_content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffff;
+  text-align: center;
+}
+
+.contact_btn {
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 19px;
+  color: black;
+  padding: 9px 20px;
+  box-shadow: 0px 0px 10px #2d2d2da2;
+}
+
+/* =====RESPONSIVENESS=== */
+
+@media screen and (max-width: 1120px) {
+  #container {
+    width: 100%;
+  }
+
+  .navbar,
+  footer {
+    padding: 1rem 2rem;
+  }
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    /* margin: 5px 0; */
+  }
+
+  /* -----HEADER STYLING-- */
+
+  .Wood_furniture {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  .Wood_furniture .Wood {
+    position: relative;
+  }
+
+  .Wood_furniture .Wood {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(images/Rectangle\ 1.png);
+  }
+
+  .Wood_furniture--wrapper {
+    width: 90vw;
+  }
+
+  .Wood_content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .Wood_content p {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(181, 175, 175);
+    cursor: default;
+  }
+
+  .wood_btn {
+    width: 135px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #fff;
+    align-self: center;
+  }
+
+  .box h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .box p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  #wrapper {
+    padding: 2rem;
+  }
+
+  .box_container {
+    flex-direction: column;
+  }
+
+  .box_container .box {
+    width: 100%;
+  }
+
+  .box p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_items,
+  .navbar_icon {
+    display: none;
+  }
+
+  .navbar_form {
+    width: 50%;
+  }
+
+  .sidebar_btn {
+    display: block;
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 6px;
+    background-color: #e4e4e4;
+  }
+
+  .selling_item {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .Transform_content h1 {
+    font-size: 25px;
+  }
+
+  .contact_btn {
+    font-size: 15px;
+  }
+}

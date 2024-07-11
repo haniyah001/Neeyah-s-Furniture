@@ -1,0 +1,160 @@
+/* ======== CONTACT US STYLING ====== */
+
+.Contact_us {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* width: 100%; */
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  cursor: default;
+
+  box-shadow: 0px 0px 10px #d6d6d6;
+  padding: 5rem;
+}
+
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+.container .content .left-side {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  cursor: default;
+}
+
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 48%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+  cursor: default;
+}
+
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 6px;
+}
+
+.content .left-side .topic {
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 19px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  cursor: pointer;
+  resize: none;
+}
+
+.content .right-side p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+  /* font-size: 22px; */
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1230px) {
+  .container .content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .container .content .left-side,
+  .container .content .right-side {
+    width: 100%;
+  }
+
+  /* .container .content .left-side {
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+
+  .container .content .right-side {
+    margin: 0;
+  }
+
+  .content .left-side::before {
+    width: 0;
+    height: 0;
+  }
+}
